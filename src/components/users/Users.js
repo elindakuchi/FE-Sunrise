@@ -7,7 +7,17 @@ const Users = () => {
     const [users] = useContext(UserContext);
     console.log(users);
     return (
-        <div style={containerStyle}>
+        <div
+            style={{
+                boxSizing: "border-box",
+                paddingRight: "50px",
+                paddingLeft: "50px",
+                display: "flex",
+                flexDirection: "column",
+                width: "100%",
+                height: "100%",
+            }}
+        >
             {users.length === 0 ? (
                 "No users to display"
             ) : (
@@ -20,7 +30,8 @@ const Users = () => {
                     {users.map((user) => (
                         <Grid
                             item
-                            xs={6}
+                            xs={12}
+                            md={4}
                             rowSpacing={2}
                             columnSpacing={2}
                             key={user.id}
@@ -36,10 +47,9 @@ const Users = () => {
 
 export default Users;
 
-const containerStyle = {
-    display: "flex",
-    flexDirection: "column",
-    width: "100vh",
-    height: "100%",
-    justifyContent: "center",
-};
+// const containerStyle = {
+//     display: "flex",
+//     flexDirection: "column",
+//     width: "100%",
+//     height: "100%",
+// };
