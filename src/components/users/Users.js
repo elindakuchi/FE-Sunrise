@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Users = () =>{
     return (
-        <div>
+        <Link to={`/user/${1}`}>
             Users
-        </div>
+        </Link>
     );
 }
 
