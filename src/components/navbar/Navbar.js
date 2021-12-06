@@ -1,13 +1,13 @@
-import React from 'react';
-import SeachUser from './SeachUser';
+import React from "react";
+import SeachUser from "./SeachUser";
 
 const Navbar = () => {
-    return (
-        <div>
-            Navbar
-            <SeachUser/>
-        </div>
-    );
-}
+  return (
+    <div>
+      Navbar
+      <SeachUser />
+    </div>
+  );
+};
 
 export default Navbar;

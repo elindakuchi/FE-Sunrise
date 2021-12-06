@@ -3,24 +3,23 @@ import { Link } from "react-router-dom";
 import { UserContext } from "../../UserProvider";
 
 const Users = () => {
-    const [users] = useContext(UserContext);
-    console.log(users);
-    return (
+  const [users] = useContext(UserContext);
+
+  return (
+    <div>
+      {users.length ? (
         <div>
-            <Link to={`/user/${1}`}>Users</Link>
-            {users.length === 0 ? (
-                "No users to display"
-            ) : (
-                <ul>
-                    {users.map((user, index) => (
-                        <div data-testid="userCard" key={index}>
-                            {user.name}
-                        </div>
-                    ))}
-                </ul>
-            )}
+          {users.map((user) => (
+            <Link to={`/user/${user.id}`} data-testid="userCard" key={user.id}>
+              {user.name}
+            </Link>
+          ))}
         </div>
-    );
+      ) : (
+        <div>No users to display</div>
+      )}
+    </div>
+  );
 };
 
 export default Users;
