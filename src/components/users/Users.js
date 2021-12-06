@@ -11,9 +11,20 @@ const Users = () => {
             {users.length === 0 ? (
                 "No users to display"
             ) : (
-                <Grid container xs={3} rowSpacing={10} columnSpacing={10}>
+                <Grid
+                    container
+                    rowSpacing={2}
+                    columnSpacing={2}
+                    direction="row"
+                >
                     {users.map((user) => (
-                        <Grid item key={user.id}>
+                        <Grid
+                            item
+                            xs={6}
+                            rowSpacing={2}
+                            columnSpacing={2}
+                            key={user.id}
+                        >
                             <UserCard user={user} />
                         </Grid>
                     ))}
@@ -28,8 +39,7 @@ export default Users;
 const containerStyle = {
     display: "flex",
     flexDirection: "column",
-    width: "100%",
+    width: "100vh",
     height: "100%",
-    justifyContent: "top",
-    alignItems: "center",
+    justifyContent: "center",
 };
