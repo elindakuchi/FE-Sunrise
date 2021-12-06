@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { UserContext } from "../../UserProvider";
 import UserCard from "./UserCard";
 import Grid from "@mui/material/Grid";
-import Card from "@mui/material/Card";
 
 const Users = () => {
     const [users] = useContext(UserContext);

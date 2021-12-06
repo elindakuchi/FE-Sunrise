@@ -8,7 +8,7 @@ const UserCard = ({ user }) => {
             data-testid="userCard"
             style={{ textDecoration: "none" }}
         >
-            {user.name}
+            <Card>{user.name}</Card>
         </Link>
     );
 };
