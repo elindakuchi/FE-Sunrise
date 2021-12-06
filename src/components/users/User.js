@@ -15,64 +15,66 @@ const User = () => {
   return (
       <Card sx={{ margin: 20, padding: 2 }}>
         <CardContent>
-          <Grid container spacing={3}>
-            <Grid item sm={2.5}>
-                <div
+          <Grid container spacing={3} sm={12}>
+                <Grid item sm={3}>
+                    <div
+                        style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        fontWeight: 600
+                        }}
+                    >
+                    <Avatar
+                        alt={USER.name.charAt(0)}
+                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80"
+                        sx={{ width: 120, height: 120, marginBottom: 2 }}
+                    >
+                        <Typography variant="h4">{USER.name.charAt(0).toUpperCase()}</Typography>
+                    </Avatar>
+                    <Typography variant="h6" style={{color: '#AD0F5B'}}>{USER.name}</Typography>
+                    <Typography variant="subtitle1" style={{color: '#808080'}}>{USER.role}</Typography>
+                    <Typography variant="subtitle1" >@{USER.team}</Typography>
+                </div>
+                </Grid>
+
+                <Grid
+                    item
+                    sm={1}
                     style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
                     }}
                 >
-                <Avatar
-                  alt={USER.name.charAt(0)}
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80"
-                  sx={{ width: 100, height: 100, marginBottom: 2 }}
-                >
-                    {USER.name.charAt(0).toUpperCase()}
-                </Avatar>
-                <Typography>{USER.name}</Typography>
-                <Typography>{USER.role}</Typography>
-                <Typography>@{USER.team}</Typography>
-              </div>
-            </Grid>
-            <Grid
-              item
-              sm={0.5}
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <Divider orientation="vertical" />
-            </Grid>
-            <Grid item sm={9}>
-              <div style={{ textAlign: "left", fontWeight: 600 }}>Bio</div>
-              <Divider orientation="horizontal" />
-              <p style={{ textAlign: "left"}}>
-               {USER.bio}
-              </p>
-              <Grid container spacing={2} style={{ textAlign: "left" }}>
-                <Grid item sm={4}>
-                  <div style={{ fontWeight: 600 }}>ID</div>
-                  <Divider orientation="horizontal" />
-                  <p>{USER.id}</p>
+                    <Divider orientation="vertical" />
                 </Grid>
-                <Grid item sm={4}>
-                  <div style={{ fontWeight: 600 }}>Group</div>
-                  <Divider orientation="horizontal" />
-                  <p>{USER.group}</p>
+                <Grid item sm={8}>
+                    <Typography align="left" variant="h6">Bio</Typography>
+                    <Divider orientation="horizontal" />
+                    <Typography align="left" gutterBottom style={{color: '#808080'}}>
+                        {USER.bio}
+                    </Typography>
+                <Grid container spacing={2}>
+                    <Grid item sm={4}>
+                        <Typography align="left" variant="h6">ID</Typography>
+                        <Divider orientation="horizontal" />
+                        <Typography align="left" style={{color: '#808080'}}>{USER.id}</Typography>
+                    </Grid>
+                    <Grid item sm={4}>
+                        <Typography align="left" variant="h6">Group</Typography>
+                        <Divider orientation="horizontal" />
+                        <Typography align="left" style={{color: '#808080'}}>{USER.group}</Typography>
+                    </Grid>
+                    <Grid item sm={4}>
+                        <Typography align="left" variant="h6">Team</Typography>
+                        <Divider orientation="horizontal"/>
+                        <Typography align="left" style={{color: '#808080'}}>{USER.team}</Typography>
+                    </Grid>
                 </Grid>
-                <Grid item sm={4}>
-                  <div style={{ fontWeight: 600 }}>Team</div>
-                  <Divider orientation="horizontal" />
-                  <p>{USER.team}</p>
                 </Grid>
               </Grid>
-            </Grid>
-          </Grid>
         </CardContent>
       </Card>
   );
