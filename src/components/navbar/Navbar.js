@@ -7,11 +7,11 @@ import { displayLayout } from './styles';
 import { theme } from './styles';
 import { ThemeProvider } from '@mui/material/styles';
 import Brightness5Icon from '@mui/icons-material/Brightness5';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 
 
 const Navbar = () => {
+    
     return (
         <Box sx={{ flexGrow: 1 }}>
             <ThemeProvider theme={theme}>			

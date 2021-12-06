@@ -1,6 +1,7 @@
 import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import { createTheme } from '@mui/material/styles';
+import { NoEncryption } from '@mui/icons-material';
 
 export const theme = createTheme({
     palette: {
@@ -47,3 +48,9 @@ export const SearchInputLayout = styled('div')(({ theme }) => ({
     },
     
   }));
+
+export const backButtonLayout = {
+  textDecoration: 'none',
+  decoration: 'none',
+  color: '#F2F2F2',
+}
