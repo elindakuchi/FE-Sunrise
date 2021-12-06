@@ -1,4 +1,4 @@
-import { styled } from '@mui/material/styles';
+import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import { createTheme } from '@mui/material/styles';
 
@@ -25,18 +25,25 @@ export const SearchInput = styled(InputBase)(({ theme }) => ({
       padding: theme.spacing(1, 1, 1, 0),
       paddingLeft: `calc(1em + ${theme.spacing(1)})`,
       transition: theme.transitions.create('width'),
-      width: '100%',
-      
-    },
-    
-  }));
+    width: '100%',
+    [theme.breakpoints.up('sm')]: {
+      width: '12ch',
+      '&:focus': {
+        width: '20ch',
+      },      
+    },    
+  }}));
 
-export const searchInputLayout = {
+export const SearchInputLayout = styled('div')(({ theme }) => ({
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: 'rgba(255, 255, 255, 0.15)',
-    paddingRight: `calc(1em + ${theme.spacing(0.1)})`,
     borderRadius: '5px',
-}
-
+    paddingRight: '1rem',
+    
+    backgroundColor: alpha(theme.palette.common.white, 0.15),
+    '&:hover': {
+      backgroundColor: alpha(theme.palette.common.white, 0.25),
+    },
+    
+  }));

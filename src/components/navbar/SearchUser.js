@@ -1,21 +1,19 @@
 import React from 'react';
 import { SearchInput } from './styles';
 import SearchIcon from '@mui/icons-material/Search';
-import { searchInputLayout } from './styles';
+import {SearchInputLayout} from './styles';
 
 
 
 const SeachUser = () => {
     return (
-        <div style={searchInputLayout} >
+        <SearchInputLayout >
             <SearchInput
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
             />
             <SearchIcon />
-            
-            
-        </div>
+        </SearchInputLayout>
     );
 }
 
