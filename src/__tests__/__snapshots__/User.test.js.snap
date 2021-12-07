@@ -1,0 +1,643 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Page Rendering should render details container 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 MuiCard-root css-9v99vz-MuiPaper-root-MuiCard-root"
+        style="margin: 40px; padding: 20px;"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 css-zow5z4-MuiGrid-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-2.5 css-10nnop5-MuiGrid-root"
+          >
+            <div
+              style="display: flex; flex-direction: column; justify-content: center; align-items: center;"
+            >
+              <div
+                class="MuiAvatar-root MuiAvatar-circular css-1bn2bt2-MuiAvatar-root"
+              >
+                <img
+                  alt="S"
+                  class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80"
+                />
+              </div>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+                data-testid="user-profile-name"
+                style="color: rgb(173, 15, 91);"
+              >
+                Soria
+              </h6>
+              <h6
+                class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+                style="color: rgb(128, 128, 128);"
+              >
+                Developer
+              </h6>
+              <h6
+                class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+              >
+                @
+                Engineering
+              </h6>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-0.5 css-1wmh6dh-MuiGrid-root"
+            style="display: flex; justify-content: center; align-items: center;"
+          >
+            <hr
+              class="MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical css-ftc7wc-MuiDivider-root"
+            />
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-9 css-cyie08-MuiGrid-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft css-1lv9nvb-MuiTypography-root"
+            >
+              Bio
+            </h6>
+            <hr
+              class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+            />
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-gutterBottom css-k21izb-MuiTypography-root"
+              style="color: rgb(128, 128, 128);"
+            >
+               is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mhc70k-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-17dw2p9-MuiGrid-root"
+              >
+                <h6
+                  class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft css-1lv9nvb-MuiTypography-root"
+                >
+                  ID
+                </h6>
+                <hr
+                  class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+                />
+                <p
+                  class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft css-zpphrz-MuiTypography-root"
+                  style="color: rgb(128, 128, 128);"
+                >
+                  1
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-17dw2p9-MuiGrid-root"
+              >
+                <h6
+                  class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft css-1lv9nvb-MuiTypography-root"
+                >
+                  Group
+                </h6>
+                <hr
+                  class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+                />
+                <p
+                  class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft css-zpphrz-MuiTypography-root"
+                  style="color: rgb(128, 128, 128);"
+                >
+                  Testing
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-17dw2p9-MuiGrid-root"
+              >
+                <h6
+                  class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft css-1lv9nvb-MuiTypography-root"
+                >
+                  Team
+                </h6>
+                <hr
+                  class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+                />
+                <p
+                  class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft css-zpphrz-MuiTypography-root"
+                  style="color: rgb(128, 128, 128);"
+                >
+                  Engineering
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 MuiCard-root css-9v99vz-MuiPaper-root-MuiCard-root"
+      style="margin: 40px; padding: 20px;"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 css-zow5z4-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-2.5 css-10nnop5-MuiGrid-root"
+        >
+          <div
+            style="display: flex; flex-direction: column; justify-content: center; align-items: center;"
+          >
+            <div
+              class="MuiAvatar-root MuiAvatar-circular css-1bn2bt2-MuiAvatar-root"
+            >
+              <img
+                alt="S"
+                class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80"
+              />
+            </div>
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              data-testid="user-profile-name"
+              style="color: rgb(173, 15, 91);"
+            >
+              Soria
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+              style="color: rgb(128, 128, 128);"
+            >
+              Developer
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              @
+              Engineering
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-0.5 css-1wmh6dh-MuiGrid-root"
+          style="display: flex; justify-content: center; align-items: center;"
+        >
+          <hr
+            class="MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical css-ftc7wc-MuiDivider-root"
+          />
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-9 css-cyie08-MuiGrid-root"
+        >
+          <h6
+            class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft css-1lv9nvb-MuiTypography-root"
+          >
+            Bio
+          </h6>
+          <hr
+            class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+          />
+          <p
+            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-gutterBottom css-k21izb-MuiTypography-root"
+            style="color: rgb(128, 128, 128);"
+          >
+             is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mhc70k-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-17dw2p9-MuiGrid-root"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft css-1lv9nvb-MuiTypography-root"
+              >
+                ID
+              </h6>
+              <hr
+                class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+              />
+              <p
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft css-zpphrz-MuiTypography-root"
+                style="color: rgb(128, 128, 128);"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-17dw2p9-MuiGrid-root"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft css-1lv9nvb-MuiTypography-root"
+              >
+                Group
+              </h6>
+              <hr
+                class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+              />
+              <p
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft css-zpphrz-MuiTypography-root"
+                style="color: rgb(128, 128, 128);"
+              >
+                Testing
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-17dw2p9-MuiGrid-root"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft css-1lv9nvb-MuiTypography-root"
+              >
+                Team
+              </h6>
+              <hr
+                class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+              />
+              <p
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft css-zpphrz-MuiTypography-root"
+                style="color: rgb(128, 128, 128);"
+              >
+                Engineering
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Rendering should render details container 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 MuiCard-root css-9v99vz-MuiPaper-root-MuiCard-root"
+        style="margin: 40px; padding: 20px;"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 css-zow5z4-MuiGrid-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-2.5 css-10nnop5-MuiGrid-root"
+          >
+            <div
+              style="display: flex; flex-direction: column; justify-content: center; align-items: center;"
+            >
+              <div
+                class="MuiAvatar-root MuiAvatar-circular css-1bn2bt2-MuiAvatar-root"
+              >
+                <img
+                  alt="S"
+                  class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80"
+                />
+              </div>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+                data-testid="user-profile-name"
+                style="color: rgb(173, 15, 91);"
+              >
+                Soria
+              </h6>
+              <h6
+                class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+                style="color: rgb(128, 128, 128);"
+              >
+                Developer
+              </h6>
+              <h6
+                class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+              >
+                @
+                Engineering
+              </h6>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-0.5 css-1wmh6dh-MuiGrid-root"
+            style="display: flex; justify-content: center; align-items: center;"
+          >
+            <hr
+              class="MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical css-ftc7wc-MuiDivider-root"
+            />
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-9 css-cyie08-MuiGrid-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft css-1lv9nvb-MuiTypography-root"
+            >
+              Bio
+            </h6>
+            <hr
+              class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+            />
+            <p
+              class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-gutterBottom css-k21izb-MuiTypography-root"
+              style="color: rgb(128, 128, 128);"
+            >
+               is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mhc70k-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-17dw2p9-MuiGrid-root"
+              >
+                <h6
+                  class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft css-1lv9nvb-MuiTypography-root"
+                >
+                  ID
+                </h6>
+                <hr
+                  class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+                />
+                <p
+                  class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft css-zpphrz-MuiTypography-root"
+                  style="color: rgb(128, 128, 128);"
+                >
+                  1
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-17dw2p9-MuiGrid-root"
+              >
+                <h6
+                  class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft css-1lv9nvb-MuiTypography-root"
+                >
+                  Group
+                </h6>
+                <hr
+                  class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+                />
+                <p
+                  class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft css-zpphrz-MuiTypography-root"
+                  style="color: rgb(128, 128, 128);"
+                >
+                  Testing
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-17dw2p9-MuiGrid-root"
+              >
+                <h6
+                  class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft css-1lv9nvb-MuiTypography-root"
+                >
+                  Team
+                </h6>
+                <hr
+                  class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+                />
+                <p
+                  class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft css-zpphrz-MuiTypography-root"
+                  style="color: rgb(128, 128, 128);"
+                >
+                  Engineering
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 MuiCard-root css-9v99vz-MuiPaper-root-MuiCard-root"
+      style="margin: 40px; padding: 20px;"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 css-zow5z4-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-2.5 css-10nnop5-MuiGrid-root"
+        >
+          <div
+            style="display: flex; flex-direction: column; justify-content: center; align-items: center;"
+          >
+            <div
+              class="MuiAvatar-root MuiAvatar-circular css-1bn2bt2-MuiAvatar-root"
+            >
+              <img
+                alt="S"
+                class="MuiAvatar-img css-1pqm26d-MuiAvatar-img"
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80"
+              />
+            </div>
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+              data-testid="user-profile-name"
+              style="color: rgb(173, 15, 91);"
+            >
+              Soria
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+              style="color: rgb(128, 128, 128);"
+            >
+              Developer
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              @
+              Engineering
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-0.5 css-1wmh6dh-MuiGrid-root"
+          style="display: flex; justify-content: center; align-items: center;"
+        >
+          <hr
+            class="MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical css-ftc7wc-MuiDivider-root"
+          />
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-9 css-cyie08-MuiGrid-root"
+        >
+          <h6
+            class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft css-1lv9nvb-MuiTypography-root"
+          >
+            Bio
+          </h6>
+          <hr
+            class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+          />
+          <p
+            class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft MuiTypography-gutterBottom css-k21izb-MuiTypography-root"
+            style="color: rgb(128, 128, 128);"
+          >
+             is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-mhc70k-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-17dw2p9-MuiGrid-root"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft css-1lv9nvb-MuiTypography-root"
+              >
+                ID
+              </h6>
+              <hr
+                class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+              />
+              <p
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft css-zpphrz-MuiTypography-root"
+                style="color: rgb(128, 128, 128);"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-17dw2p9-MuiGrid-root"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft css-1lv9nvb-MuiTypography-root"
+              >
+                Group
+              </h6>
+              <hr
+                class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+              />
+              <p
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft css-zpphrz-MuiTypography-root"
+                style="color: rgb(128, 128, 128);"
+              >
+                Testing
+              </p>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4 css-17dw2p9-MuiGrid-root"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft css-1lv9nvb-MuiTypography-root"
+              >
+                Team
+              </h6>
+              <hr
+                class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+              />
+              <p
+                class="MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft css-zpphrz-MuiTypography-root"
+                style="color: rgb(128, 128, 128);"
+              >
+                Engineering
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
