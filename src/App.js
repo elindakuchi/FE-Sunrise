@@ -15,7 +15,6 @@ function App() {
 			<UserProvider>
 				<div className="App">
 					<Navbar/>
-					<h1> Hello Sunrisers!</h1>
 					<Routes>
 						<Route exact path='/' element={<Users/>} />
 						<Route path='/user/:id' element={<User/>} />
