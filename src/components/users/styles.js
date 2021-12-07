@@ -48,12 +48,3 @@ export const userTeamStyle = {
     fontSize: "18px",
     lineHeight: "20px",
 };
-
-export const userLocationStyle = {
-    color: "#050505",
-    fontFamily: "Open Sans",
-    fontStyle: "normal",
-    fontWeight: 600,
-    fontSize: "18px",
-    lineHeight: "20px",
-};

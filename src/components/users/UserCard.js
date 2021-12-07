@@ -10,7 +10,6 @@ import {
     userNameStyle,
     userRoleStyle,
     userTeamStyle,
-    userLocationStyle,
 } from "./styles";
 
 const UserCard = ({ user }) => {
