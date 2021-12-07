@@ -12,9 +12,9 @@ const User = () => {
   let { id } = useParams();
   const USER = users.filter((user) => user.id === id)[0];
   return (
-    <Paper sx={{ p:5, margin: 10}} elevation={3}>
+    <Paper style={{margin: 40, padding: 20}} elevation={3}>
           <Grid container spacing={3} >
-                <Grid item lg={2.5} xs={12}>
+                <Grid item md={2.5} xs={12}>
                     <div
                         style={{
                         display: "flex",
@@ -38,7 +38,7 @@ const User = () => {
 
                 <Grid
                     item
-                    lg={0.5}
+                    md={0.5}
                     xs={12}
                     style={{
                         display: "flex",
@@ -48,24 +48,24 @@ const User = () => {
                 >
                     <Divider orientation="vertical" />
                 </Grid>
-                <Grid item lg={9} xs={12}>
+                <Grid item md={9} xs={12}>
                     <Typography align="left" variant="h6">Bio</Typography>
                     <Divider orientation="horizontal" />
                     <Typography align="left" gutterBottom style={{color: '#808080'}}>
                         {USER.bio}
                     </Typography>
                 <Grid container spacing={2}>
-                    <Grid item lg={4} xs={12}>
+                    <Grid item md={4} xs={12}>
                         <Typography align="left" variant="h6">ID</Typography>
                         <Divider orientation="horizontal" />
                         <Typography align="left" style={{color: '#808080'}}>{USER.id}</Typography>
                     </Grid>
-                    <Grid item lg={4} xs={12}>
+                    <Grid item md={4} xs={12}>
                         <Typography align="left" variant="h6">Group</Typography>
                         <Divider orientation="horizontal" />
                         <Typography align="left" style={{color: '#808080'}}>{USER.group}</Typography>
                     </Grid>
-                    <Grid item lg={4} xs={12}>
+                    <Grid item md={4} xs={12}>
                         <Typography align="left" variant="h6">Team</Typography>
                         <Divider orientation="horizontal"/>
                         <Typography align="left" style={{color: '#808080'}}>{USER.team}</Typography>
