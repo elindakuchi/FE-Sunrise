@@ -1,0 +1,74 @@
+
+   [
+        { 
+            "id" : 0,
+            "name": "Sigga Greendfsd",
+            "role" : "Pirate",
+            "group" : "BPI",
+            "team" : "Wolfpack",
+            "location": "Reykjavik",
+            "bio" : "jfldsjfksdjfkds"
+        
+        },
+        { 
+            "id" : 1,
+            "name": "Sigga Blue",
+            "role" : "Frontend Engineer",
+            "group" : "BPI",
+            "team" : "Wolfpack",
+            "location": "Atlanta",
+            "bio" : "jfldsjfksdjfkds"
+        
+        },
+        { 
+            "id" : 2,
+            "name": "Sigga Red",
+            "role" : "Frontend Engineer",
+            "group" : "BPI",
+            "team" : "Superman",
+            "location": "Reykjavik",
+            "bio" : "jfldsjfksdjfkds"
+        
+        },
+        { 
+            "id" : 3,
+            "name": "Sigga Yellow",
+            "role" : "Pirate",
+            "group" : "BPI",
+            "team" : "Wolfpack",
+            "location": "Berlin",
+            "bio" : "jfldsjfksdjfkds"
+        
+        },
+        { 
+            "id" : 4,
+            "name": "Sigga Green",
+            "role" : "Pirate",
+            "group" : "BPM",
+            "team" : "Superman",
+            "location": "Berlin",
+            "bio" : "jfldsjfksdjfkds"
+        
+        },
+        { 
+            "id" : 5,
+            "name": "Sigga Yellow",
+            "role" : "Pirate",
+            "group" : "BPM",
+            "team" : "Avengers",
+            "location": "UK",
+            "bio" : "jfldsjfksdjfkds"
+        
+        },
+        { 
+            "id" : 6,
+            "name": "Sigga Blue",
+            "role" : "Frontend Engineer",
+            "group" : "BPM",
+            "team" : "Avengers",
+            "location": "Berlin",
+            "bio" : "jfldsjfksdjfkds"
+        
+        }
+        
+    ]

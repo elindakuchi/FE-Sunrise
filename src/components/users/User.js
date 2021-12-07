@@ -2,6 +2,7 @@ import React,{useContext} from 'react';
 import { useNavigate } from 'react-router';
 import { UserContext } from '../../UserProvider';
 
+
 const User = () => {
     const [users] = useContext(UserContext)
     console.log(users)
