@@ -16,14 +16,13 @@ const User = () => {
       <Card sx={{ margin: 20, padding: 2 }}>
         <CardContent>
           <Grid container spacing={3} sm={12}>
-                <Grid item sm={3}>
+                <Grid item sm={2.5}>
                     <div
                         style={{
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "center",
                         alignItems: "center",
-                        fontWeight: 600
                         }}
                     >
                     <Avatar
@@ -41,7 +40,7 @@ const User = () => {
 
                 <Grid
                     item
-                    sm={1}
+                    sm={0.5}
                     style={{
                         display: "flex",
                         justifyContent: "center",
@@ -50,7 +49,7 @@ const User = () => {
                 >
                     <Divider orientation="vertical" />
                 </Grid>
-                <Grid item sm={8}>
+                <Grid item sm={9}>
                     <Typography align="left" variant="h6">Bio</Typography>
                     <Divider orientation="horizontal" />
                     <Typography align="left" gutterBottom style={{color: '#808080'}}>
