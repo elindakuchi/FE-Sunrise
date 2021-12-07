@@ -2,22 +2,12 @@ import React, { useContext } from "react";
 import { UserContext } from "../../UserProvider";
 import UserCard from "./UserCard";
 import Grid from "@mui/material/Grid";
+import { usersContainerStyles } from "./styles";
 
 const Users = () => {
     const [users] = useContext(UserContext);
-    console.log(users);
     return (
-        <div
-            style={{
-                boxSizing: "border-box",
-                paddingRight: "50px",
-                paddingLeft: "50px",
-                display: "flex",
-                flexDirection: "column",
-                width: "100%",
-                height: "100%",
-            }}
-        >
+        <div style={usersContainerStyles}>
             {users.length === 0 ? (
                 "No users to display"
             ) : (
@@ -46,10 +36,3 @@ const Users = () => {
 };
 
 export default Users;
-
-// const containerStyle = {
-//     display: "flex",
-//     flexDirection: "column",
-//     width: "100%",
-//     height: "100%",
-// };
