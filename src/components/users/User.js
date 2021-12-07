@@ -4,16 +4,18 @@ import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
 import Divider from "@mui/material/Divider";
 import Grid from "@mui/material/Grid";
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import { UserContext } from "../../UserProvider";
 import { displayLayout, paperStyles, gridStyles } from "./styles";
 
 const User = () => {
 	const [users] = useContext(UserContext);
 	let { id } = useParams();
+
 	const USER = users.filter((user) => user.id === id)[0];
+	
 	return (
-		<Paper style={paperStyles} elevation={3}>
+		<Paper style={paperStyles} elevation={3} data-testid="user-profile-card">
 			<Grid container spacing={3}>
 				<Grid item md={2.5} xs={12}>
 					<div style={displayLayout}>
@@ -23,14 +25,13 @@ const User = () => {
 							sx={{ width: 125, height: 125, marginBottom: 2 }}
 						>
 							<Typography variant="h4">
-								{USER.name.charAt(0).toUpperCase()}
+								{USER?.name?.charAt(0).toUpperCase()}
 							</Typography>
 						</Avatar>
 
 						<Typography
 							variant="h6"
 							style={{ color: "#AD0F5B" }}
-							data-testid="user-profile-name"
 						>
 							{USER.name}
 						</Typography>
