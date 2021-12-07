@@ -12,9 +12,9 @@ const User = () => {
   let { id } = useParams();
   const USER = users.filter((user) => user.id === id)[0];
   return (
-    <Paper sx={{ p:2,paddingTop: 10, margin: 'auto', minHeight: 300, maxWidth:1280, flexGrow: 1, marginTop:10}}>
+    <Paper sx={{ p:5, margin: 15}}>
           <Grid container spacing={3} >
-                <Grid item lg={3} xs={12}>
+                <Grid item lg={2.5} xs={12}>
                     <div
                         style={{
                         display: "flex",
@@ -26,7 +26,7 @@ const User = () => {
                     <Avatar
                         alt={USER.name.charAt(0)}
                         src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80"
-                        sx={{ width: 120, height: 120, marginBottom: 2 }}
+                        sx={{ width: 125, height: 125, marginBottom: 2 }}
                     >
                         <Typography variant="h4">{USER.name.charAt(0).toUpperCase()}</Typography>
                     </Avatar>
@@ -38,7 +38,7 @@ const User = () => {
 
                 <Grid
                     item
-                    lg={1}
+                    lg={0.5}
                     xs={12}
                     style={{
                         display: "flex",
@@ -48,7 +48,7 @@ const User = () => {
                 >
                     <Divider orientation="vertical" />
                 </Grid>
-                <Grid item lg={8} xs={12}>
+                <Grid item lg={9} xs={12}>
                     <Typography align="left" variant="h6">Bio</Typography>
                     <Divider orientation="horizontal" />
                     <Typography align="left" gutterBottom style={{color: '#808080'}}>
