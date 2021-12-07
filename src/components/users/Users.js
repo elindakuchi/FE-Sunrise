@@ -6,6 +6,18 @@ import { usersContainerStyles } from "./styles";
 
 const Users = () => {
     const [users] = useContext(UserContext);
+    const renderUsers = users.map((user) => (
+        <Grid
+            item
+            xs={12}
+            md={4}
+            rowSpacing={2}
+            columnSpacing={2}
+            key={user.id}
+        >
+            <UserCard user={user} />
+        </Grid>
+    ));
     return (
         <div style={usersContainerStyles}>
             {users.length === 0 ? (
@@ -17,18 +29,7 @@ const Users = () => {
                     columnSpacing={2}
                     direction="row"
                 >
-                    {users.map((user) => (
-                        <Grid
-                            item
-                            xs={12}
-                            md={4}
-                            rowSpacing={2}
-                            columnSpacing={2}
-                            key={user.id}
-                        >
-                            <UserCard user={user} />
-                        </Grid>
-                    ))}
+                    {renderUsers}
                 </Grid>
             )}
         </div>

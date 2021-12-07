@@ -13,6 +13,41 @@ import {
 } from "./styles";
 
 const UserCard = ({ user }) => {
+    const renderAvatar = (
+        <Box
+            sx={{ display: "flex", flexDirection: "row" }}
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+            width="40%"
+        >
+            <CardContent sx={{ flex: "1 0 auto", justifyContent: "center" }}>
+                <Avatar style={avatarStyle} alt="Username"></Avatar>
+            </CardContent>
+        </Box>
+    );
+
+    const renderUserData = (
+        <Box
+            sx={{ display: "flex", flexDirection: "row" }}
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+        >
+            <CardContent sx={{ flex: "1 0 auto", justifyContent: "center" }}>
+                <p data-testid="user-name" style={userNameStyle}>
+                    {user.name}
+                </p>
+                <p data-testid="user-role" style={userRoleStyle}>
+                    {user.role}
+                </p>
+
+                <p data-testid="user-team" style={userTeamStyle}>
+                    @{user.team}
+                </p>
+            </CardContent>
+        </Box>
+    );
     return (
         <Link
             to={`/user/${user.id}`}
@@ -20,40 +55,8 @@ const UserCard = ({ user }) => {
             style={{ textDecoration: "none" }}
         >
             <Card sx={userCardStyle}>
-                <Box
-                    sx={{ display: "flex", flexDirection: "row" }}
-                    direction="row"
-                    justifyContent="center"
-                    alignItems="center"
-                    width="40%"
-                >
-                    <CardContent
-                        sx={{ flex: "1 0 auto", justifyContent: "center" }}
-                    >
-                        <Avatar style={avatarStyle} alt="Username"></Avatar>
-                    </CardContent>
-                </Box>
-                <Box
-                    sx={{ display: "flex", flexDirection: "row" }}
-                    direction="row"
-                    justifyContent="center"
-                    alignItems="center"
-                >
-                    <CardContent
-                        sx={{ flex: "1 0 auto", justifyContent: "center" }}
-                    >
-                        <p data-testid="user-name" style={userNameStyle}>
-                            {user.name}
-                        </p>
-                        <p data-testid="user-role" style={userRoleStyle}>
-                            {user.role}
-                        </p>
-
-                        <p data-testid="user-team" style={userTeamStyle}>
-                            @{user.team}
-                        </p>
-                    </CardContent>
-                </Box>
+                {renderAvatar}
+                {renderUserData}
             </Card>
         </Link>
     );
