@@ -8,8 +8,6 @@ import { theme } from './styles';
 import { ThemeProvider } from '@mui/material/styles';
 import Brightness5Icon from '@mui/icons-material/Brightness5';
 
-
-
 const Navbar = () => {
     
     return (

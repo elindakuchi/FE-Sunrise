@@ -6,6 +6,7 @@ import Navbar from "./components/navbar/Navbar";
 import "./App.css";
 
 function App() {
+<<<<<<< HEAD
   return (
     <Router>
       <UserProvider>
@@ -19,6 +20,21 @@ function App() {
       </UserProvider>
     </Router>
   );
+=======
+	return (
+		<Router>
+			<UserProvider>
+				<div className="App">
+					<Navbar/>
+					<Routes>
+						<Route exact path='/' element={<Users/>} />
+						<Route path='/user/:id' element={<User/>} />
+					</Routes>
+				</div>
+			</UserProvider>
+		</Router>
+	);
+>>>>>>> main
 }
 
 export default App;
