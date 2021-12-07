@@ -1,13 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from '../App';
-import { BrowserRouter as Router } from 'react-router-dom';
 
 function renderWithProvider(users) {
-  return render(
-    <Router>
-      <App />
-    </Router>
-  );
+  return render(<App />);
 }
 
 test.skip('Should display - No users to display when users is empty array', () => {
