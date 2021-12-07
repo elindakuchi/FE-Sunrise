@@ -12,7 +12,7 @@ const User = () => {
   let { id } = useParams();
   const USER = users.filter((user) => user.id === id)[0];
   return (
-    <Paper sx={{ p:5, margin: 15}}>
+    <Paper sx={{ p:5, margin: 10}} elevation={3}>
           <Grid container spacing={3} >
                 <Grid item lg={2.5} xs={12}>
                     <div
