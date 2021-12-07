@@ -36,7 +36,7 @@ test("Should display the role of the user on the card", () => {
     renderWithProvider(users);
     expect(screen.queryAllByTestId("user-role").length).toBeGreaterThan(0);
 });
-//see location
+//see team
 test("Should display the team of the user on the card", () => {
     const users = [];
     renderWithProvider(users);
