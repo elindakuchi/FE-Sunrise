@@ -26,9 +26,11 @@ const User = () => {
 								{USER.name.charAt(0).toUpperCase()}
 							</Typography>
 						</Avatar>
-						<Typography variant="h6" style={{ color: "#AD0F5B" }}>
-							{USER.name}
-						</Typography>
+						<div data-testid="user-profile-name">
+							<Typography variant="h6" style={{ color: "#AD0F5B" }}>
+								{USER.name}
+							</Typography>
+						</div>
 						<Typography variant="subtitle1" style={{ color: "#808080" }}>
 							{USER.role}
 						</Typography>
