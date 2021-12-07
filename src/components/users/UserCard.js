@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Card from "@mui/material/Card";
 import Box from "@mui/material/Box";
 import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
 import {
     userCardStyle,
@@ -19,7 +20,7 @@ const UserCard = ({ user }) => {
             direction="row"
             justifyContent="center"
             alignItems="center"
-            width="40%"
+            width="35%"
         >
             <CardContent sx={{ flex: "1 0 auto", justifyContent: "center" }}>
                 <Avatar style={avatarStyle} alt="Username"></Avatar>
@@ -35,16 +36,21 @@ const UserCard = ({ user }) => {
             alignItems="center"
         >
             <CardContent sx={{ flex: "1 0 auto", justifyContent: "center" }}>
-                <p data-testid="user-name" style={userNameStyle}>
+                <Typography
+                    variant="h6"
+                    data-testid="user-name"
+                    style={userNameStyle}
+                >
                     {user.name}
-                </p>
-                <p data-testid="user-role" style={userRoleStyle}>
-                    {user.role}
-                </p>
+                </Typography>
 
-                <p data-testid="user-team" style={userTeamStyle}>
+                <Typography data-testid="user-role" style={userRoleStyle}>
+                    {user.role}
+                </Typography>
+
+                <Typography data-testid="user-team" style={userTeamStyle}>
                     @{user.team}
-                </p>
+                </Typography>
             </CardContent>
         </Box>
     );

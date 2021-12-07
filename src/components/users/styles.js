@@ -29,7 +29,7 @@ export const userNameStyle = {
     fontStyle: "normal",
     fontWeight: 600,
     fontSize: "24px",
-    lineHeight: "6px",
+    lineHeight: "32px",
 };
 
 export const userRoleStyle = {
@@ -46,5 +46,5 @@ export const userTeamStyle = {
     fontStyle: "normal",
     fontWeight: 600,
     fontSize: "18px",
-    lineHeight: "20px",
+    lineHeight: "28px",
 };
