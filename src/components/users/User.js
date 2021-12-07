@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
+import Paper from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
 import Divider from "@mui/material/Divider";
@@ -13,10 +12,9 @@ const User = () => {
   let { id } = useParams();
   const USER = users.filter((user) => user.id === id)[0];
   return (
-      <Card sx={{ margin: 20, padding: 2 }}>
-        <CardContent>
-          <Grid container spacing={3} sm={12}>
-                <Grid item sm={3}>
+    <Paper sx={{ p:2,paddingTop: 10, margin: 'auto', minHeight: 300, maxWidth:1280, flexGrow: 1, marginTop:10}}>
+          <Grid container spacing={3} >
+                <Grid item lg={3} xs={12}>
                     <div
                         style={{
                         display: "flex",
@@ -41,7 +39,8 @@ const User = () => {
 
                 <Grid
                     item
-                    sm={1}
+                    lg={1}
+                    xs={12}
                     style={{
                         display: "flex",
                         justifyContent: "center",
@@ -50,24 +49,24 @@ const User = () => {
                 >
                     <Divider orientation="vertical" />
                 </Grid>
-                <Grid item sm={8}>
+                <Grid item lg={8} xs={12}>
                     <Typography align="left" variant="h6">Bio</Typography>
                     <Divider orientation="horizontal" />
                     <Typography align="left" gutterBottom style={{color: '#808080'}}>
                         {USER.bio}
                     </Typography>
                 <Grid container spacing={2}>
-                    <Grid item sm={4}>
+                    <Grid item lg={4} xs={12}>
                         <Typography align="left" variant="h6">ID</Typography>
                         <Divider orientation="horizontal" />
                         <Typography align="left" style={{color: '#808080'}}>{USER.id}</Typography>
                     </Grid>
-                    <Grid item sm={4}>
+                    <Grid item lg={4} xs={12}>
                         <Typography align="left" variant="h6">Group</Typography>
                         <Divider orientation="horizontal" />
                         <Typography align="left" style={{color: '#808080'}}>{USER.group}</Typography>
                     </Grid>
-                    <Grid item sm={4}>
+                    <Grid item lg={4} xs={12}>
                         <Typography align="left" variant="h6">Team</Typography>
                         <Divider orientation="horizontal"/>
                         <Typography align="left" style={{color: '#808080'}}>{USER.team}</Typography>
@@ -75,8 +74,7 @@ const User = () => {
                 </Grid>
                 </Grid>
               </Grid>
-        </CardContent>
-      </Card>
+      </Paper>
   );
 };
 
