@@ -9,7 +9,6 @@ import { ThemeProvider } from '@mui/material/styles';
 import Brightness5Icon from '@mui/icons-material/Brightness5';
 
 const Navbar = () => {
-    
     return (
         <Box sx={{ flexGrow: 1 }}>
             <ThemeProvider theme={theme}>			
