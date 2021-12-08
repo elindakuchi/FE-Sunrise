@@ -13,7 +13,7 @@ const User = () => {
 	let { id } = useParams();
 
 	const USER = users.filter((user) => user.id === id)[0];
-	
+
 	return (
 		<Paper style={paperStyles} elevation={3} data-testid="user-profile-card">
 			<Grid container spacing={3}>
@@ -29,10 +29,7 @@ const User = () => {
 							</Typography>
 						</Avatar>
 
-						<Typography
-							variant="h6"
-							style={{ color: "#AD0F5B" }}
-						>
+						<Typography variant="h6" style={{ color: "#AD0F5B" }}>
 							{USER.name}
 						</Typography>
 

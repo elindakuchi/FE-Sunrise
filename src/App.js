@@ -8,7 +8,7 @@ import "./App.css";
 function App() {
 	return (
 		<UserProvider>
-			<div className="App">
+			<div className="App" data-testid="app">
 				<Navbar />
 				<Routes>
 					<Route exact path="/" element={<Users />} />
