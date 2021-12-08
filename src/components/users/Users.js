@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { UserContext } from "../../UserProvider";
 import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
@@ -8,10 +8,11 @@ import Avatar from "@mui/material/Avatar";
 import { usersContainerStyles } from "./styles";
 import { IMGURL } from "../../utils";
 import { Card } from "@mui/material";
+import { useLocation} from 'react-router-dom';
 
 const Users = () => {
 	const [users] = useContext(UserContext);
-	const [searchTerm,setSearchTerm] = useState('')
+	let searchtTerm = useLocation().search.slice(12)
 
 	const renderCard = (user) => (
 		<Card style={{ marginBottom: 20 }}>
@@ -53,19 +54,18 @@ const Users = () => {
 	);
 	return (
 		<div style={usersContainerStyles}>
-			<input type="text" placeholder="seach..." onChange={e=>setSearchTerm(e.target.value)} />
 			{users.length ? (
 				<Grid container spacing={3} style={{ marginTop: 40 }}>
 					{users.filter((val)=>{
-                    if(searchTerm == ""){
+                    if(searchtTerm == ""){
                     return val
                     }
                     else if(
-                        (val.name.toLowerCase().includes(searchTerm.toLowerCase())) || 
-                        (val.role.toLowerCase().includes(searchTerm.toLowerCase())) || 
-                        (val.group.toLowerCase().includes(searchTerm.toLowerCase())) ||
-                        (val.team.toLowerCase().includes(searchTerm.toLowerCase())) ||
-                        (val.location.toLowerCase().includes(searchTerm.toLowerCase()))
+                        (val.name.toLowerCase().includes(searchtTerm.toLowerCase())) || 
+                        (val.role.toLowerCase().includes(searchtTerm.toLowerCase())) || 
+                        (val.group.toLowerCase().includes(searchtTerm.toLowerCase())) ||
+                        (val.team.toLowerCase().includes(searchtTerm.toLowerCase())) ||
+                        (val.location.toLowerCase().includes(searchtTerm.toLowerCase()))
                     ){
                     return val;
                     }
