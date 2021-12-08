@@ -69,7 +69,7 @@ const Users = () => {
                     ){
                     return val;
                     }
-					return val;
+					return;
                 }).map((user) => (
 						<Grid item key={user.id} xs={12} md={6} lg={4}>
 							<Link
