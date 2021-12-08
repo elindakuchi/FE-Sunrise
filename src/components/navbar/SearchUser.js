@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { SearchInput } from './styles';
 import SearchIcon from '@mui/icons-material/Search';
 import {SearchInputLayout} from './styles';

@@ -57,7 +57,7 @@ const Users = () => {
 			{users.length ? (
 				<Grid container spacing={3} style={{ marginTop: 40 }}>
 					{users.filter((val)=>{
-                    if(searchtTerm == ""){
+                    if(searchtTerm === ""){
                     return val
                     }
                     else if(
@@ -69,6 +69,7 @@ const Users = () => {
                     ){
                     return val;
                     }
+					return val;
                 }).map((user) => (
 						<Grid item key={user.id} xs={12} md={6} lg={4}>
 							<Link
