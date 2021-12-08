@@ -1,7 +1,6 @@
 import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import { createTheme } from '@mui/material/styles';
-import { NoEncryption } from '@mui/icons-material';
 
 export const theme = createTheme({
     palette: {

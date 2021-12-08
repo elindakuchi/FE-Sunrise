@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { UserContext } from "../../UserProvider";
 import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
+import Box from '@mui/material/Box';
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
@@ -11,7 +12,9 @@ import { Card } from "@mui/material";
 
 const Users = () => {
 	const [users] = useContext(UserContext);
+
 	const renderCard = (user) => (
+		<Box sx={{ boxShadow: 1 }}>
 		<Card style={{ marginBottom: 20 }}>
 			<CardContent>
 				<div style={{ display: "flex", alignItems: "center" }}>
@@ -48,16 +51,17 @@ const Users = () => {
 				</div>
 			</CardContent>
 		</Card>
+		</Box>
 	);
 	return (
 		<div style={usersContainerStyles}>
 			{users.length ? (
-				<Grid container spacing={3} style={{ marginTop: 40 }}>
+				<Grid container spacing={3} style={{ marginTop: 25 }}>
 					{users.map((user) => (
-						<Grid item key={user.id} xs={12} md={6} lg={4}>
+						<Grid item key={user.id} xs={12} md={6} lg={4} data-testid='user-card'>
 							<Link
 								to={`/user/${user.id}`}
-								data-testid="userCard"
+								data-testid="do-route"
 								style={{ textDecoration: "none" }}
 							>
 								{renderCard(user)}
@@ -66,7 +70,7 @@ const Users = () => {
 					))}
 				</Grid>
 			) : (
-				"No users to display"
+				<Typography data-testid='no-data'>No users to display</Typography>
 			)}
 		</div>
 	);
