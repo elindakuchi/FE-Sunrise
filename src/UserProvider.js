@@ -1,11 +1,11 @@
 import React, { createContext, useState, useEffect } from "react";
-import { data } from "./data";
+//import { data } from "./data";
 import { getUsers } from "./apiCall";
 
 export const UserContext = createContext();
 
 const UserProvider = (props) => {
-    const [users, setUsers] = useState(data);
+    const [users, setUsers] = useState([]);
     useEffect(() => {
         async function callingApi() {
             const data = await getUsers();
