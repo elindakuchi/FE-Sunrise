@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const SeachUser = () => {
-    return (
-        <div>
-            Search
-        </div>
-    );
-}
+  return <div>Search</div>;
+};
 
 export default SeachUser;
