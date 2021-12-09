@@ -15,8 +15,8 @@ const Users = () => {
 	const [users] = useContext(UserContext);
 	let searchtTerm = useLocation().search.slice(12)
 
-	const renderCard = (user) => (
-		<Box sx={{ boxShadow: 1 }}>
+	if (users) {
+		const renderCard = (user) => (
 			<Card style={{ marginBottom: 20 }}>
 				<CardContent>
 					<div style={{ display: "flex", alignItems: "center" }}>
@@ -57,6 +57,7 @@ const Users = () => {
 					</div>
 				</CardContent>
 			</Card>
+
 		</Box>
 	);
 	return (
@@ -97,6 +98,7 @@ const Users = () => {
 			)}
 		</div>
 	);
+
 };
 
 export default Users;

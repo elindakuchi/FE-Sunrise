@@ -12,9 +12,9 @@ const User = () => {
 	const [users] = useContext(UserContext);
 	let { id } = useParams();
 
-	const USER = users.filter((user) => user.id === id)[0];
+	const USER = users?.filter((user) => user.id === parseInt(id, 10))[0];
 
-	return (
+	return USER ? (
 		<Paper style={paperStyles} elevation={3} data-testid="user-profile-card">
 			<Grid container spacing={3}>
 				<Grid item md={2.5} xs={12}>
@@ -22,7 +22,11 @@ const User = () => {
 						<Avatar
 							alt={USER.name.charAt(0)}
 							src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80"
-							sx={{ width: 125, height: 125, marginBottom: 2 }}
+							sx={{
+								width: 125,
+								height: 125,
+								marginBottom: 2,
+							}}
 						>
 							<Typography variant="h4">
 								{USER?.name?.charAt(0).toUpperCase()}
@@ -83,6 +87,8 @@ const User = () => {
 				</Grid>
 			</Grid>
 		</Paper>
+	) : (
+		"No user information available"
 	);
 };
 
