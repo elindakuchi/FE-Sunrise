@@ -32,7 +32,7 @@ describe('App', () => {
   });
 
   it('should display users name', async () => {
-    const text = await screen.findByText('Nidhi');
+    const text = await screen.findByText(users[0].name);
     expect(text).toBeVisible();
   });
 });
