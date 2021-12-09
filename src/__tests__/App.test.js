@@ -4,8 +4,6 @@ import App from '../App';
 import { data as users } from '../data';
 import * as apiCalls from '../apiCall';
 
-const { getByTestId } = screen;
-
 describe('App', () => {
   beforeEach(async () => {
     const mockGetUsers = jest.spyOn(apiCalls, 'getUsers');
@@ -23,7 +21,8 @@ describe('App', () => {
   });
 
   it('Should display App', async () => {
-    expect(getByTestId('app')).toBeInTheDocument();
+    const appContainer = await screen.findByTestId('app');
+    expect(appContainer).toBeInTheDocument();
   });
 
   it('should display list of users when there are users', async () => {
