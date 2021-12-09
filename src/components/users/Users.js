@@ -9,9 +9,11 @@ import Avatar from "@mui/material/Avatar";
 import { usersContainerStyles } from "./styles";
 import { IMGURL } from "../../utils";
 import { Card } from "@mui/material";
+import { useLocation} from 'react-router-dom';
 
 const Users = () => {
 	const [users] = useContext(UserContext);
+	let searchtTerm = useLocation().search.slice(12)
 
 	const renderCard = (user) => (
 		<Box sx={{ boxShadow: 1 }}>
@@ -61,7 +63,21 @@ const Users = () => {
 		<div style={usersContainerStyles}>
 			{users.length ? (
 				<Grid container spacing={3} style={{ marginTop: 25 }}>
-					{users.map((user) => (
+					{users.filter((val)=>{
+                    if(searchtTerm === ""){
+                    return val
+                    }
+                    else if(
+                        (val.name.toLowerCase().includes(searchtTerm.toLowerCase())) || 
+                        (val.role.toLowerCase().includes(searchtTerm.toLowerCase())) || 
+                        (val.group.toLowerCase().includes(searchtTerm.toLowerCase())) ||
+                        (val.team.toLowerCase().includes(searchtTerm.toLowerCase())) ||
+                        (val.location.toLowerCase().includes(searchtTerm.toLowerCase()))
+                    ){
+                    return val;
+                    }
+					return;
+                }).map((user) => (
 						<Grid
 							item
 							key={user.id}

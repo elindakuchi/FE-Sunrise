@@ -13,6 +13,7 @@ export const theme = createTheme({
 
 // Nav layout
 export const displayLayout = {
+    width: '100vw',   
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
@@ -48,6 +49,7 @@ export const SearchInputLayout = styled('div')(({ theme }) => ({
     
   }));
 
+  // Back button styling
 export const backButtonLayout = {
   textDecoration: 'none',
   decoration: 'none',
