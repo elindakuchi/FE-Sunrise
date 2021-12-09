@@ -9,9 +9,8 @@ import { ThemeProvider } from '@mui/material/styles';
 
 const Navbar = () => {
    
-    
     return (
-        <Box sx={{ flexGrow: 1 }}>
+        <Box sx={{ flexGrow: 1 }} data-testid="navbar">
             <ThemeProvider theme={theme}>			
                 <AppBar position="static" >
                     <Toolbar >

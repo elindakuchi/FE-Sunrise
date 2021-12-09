@@ -52,7 +52,7 @@ const User = () => {
 					<Typography align="left" gutterBottom style={{ color: "#808080" }}>
 						{USER.bio}
 					</Typography>
-					<Grid container spacing={2}>
+					<Grid container spacing={2} style={{marginTop: 5}}>
 						<Grid item md={3} xs={12}>
 							<Typography align="left" variant="h6">
 								ID
@@ -94,7 +94,7 @@ const User = () => {
 			</Grid>
 		</Paper>
 	) : (
-		"No user information available"
+		<div style={paperStyles} data-testid='no-user' >No user information available</div>
 	);
 };
 
