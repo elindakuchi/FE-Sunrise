@@ -13,7 +13,11 @@ import { useLocation} from 'react-router-dom';
 
 const Users = () => {
 	const [users] = useContext(UserContext);
+<<<<<<< Updated upstream
 	let searchtTerm = useLocation().search.slice(12)
+=======
+	let searchTerm = useLocation().search.slice(12)
+>>>>>>> Stashed changes
 
 	if (users) {
 		const renderCard = (user) => (
@@ -57,6 +61,7 @@ const Users = () => {
 					</div>
 				</CardContent>
 			</Card>
+<<<<<<< Updated upstream
 
 		</Box>
 	);
@@ -99,6 +104,46 @@ const Users = () => {
 		</div>
 	);
 
+=======
+		);
+		return (
+			<div style={usersContainerStyles}>
+				{users.length ? (
+					<Grid container spacing={3} style={{ marginTop: 40 }}>
+						{users.filter((val)=>{
+                    if(searchTerm === ""){
+                    return val
+                    }
+                    else if(
+                        (val.name.toLowerCase().includes(searchTerm.toLowerCase())) || 
+                        (val.role.toLowerCase().includes(searchTerm.toLowerCase())) || 
+                        (val.group.toLowerCase().includes(searchTerm.toLowerCase())) ||
+                        (val.team.toLowerCase().includes(searchTerm.toLowerCase())) ||
+                        (val.location.toLowerCase().includes(searchTerm.toLowerCase()))
+                    ){
+                    return val;
+                    }
+                }).map((user) => (
+							<Grid item key={user.id} xs={12} md={6} lg={4}>
+								<Link
+									to={`/user/${user.id}`}
+									data-testid="userCard"
+									style={{ textDecoration: "none" }}
+								>
+									{renderCard(user)}
+								</Link>
+							</Grid>
+						))}
+					</Grid>
+				) : (
+					"No users to display"
+				)}
+			</div>
+		);
+	} else {
+		return "No users to display";
+	}
+>>>>>>> Stashed changes
 };
 
 export default Users;
