@@ -94,7 +94,9 @@ const User = () => {
 			</Grid>
 		</Paper>
 	) : (
-		"No user information available"
+		<Typography variant="h6" style={{ marginTop: 100 }}>
+			No user information available
+		</Typography>
 	);
 };
 
