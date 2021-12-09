@@ -13,8 +13,8 @@ import { Card } from "@mui/material";
 const Users = () => {
 	const [users] = useContext(UserContext);
 
-	const renderCard = (user) => (
-		<Box sx={{ boxShadow: 1 }}>
+	if (users) {
+		const renderCard = (user) => (
 			<Card style={{ marginBottom: 20 }}>
 				<CardContent>
 					<div style={{ display: "flex", alignItems: "center" }}>
@@ -55,32 +55,31 @@ const Users = () => {
 					</div>
 				</CardContent>
 			</Card>
-		</Box>
-	);
-	return (
-		<div style={usersContainerStyles}>
-			{users.length ? (
-				<Grid container spacing={3} style={{ marginTop: 25 }}>
-					{users.map((user) => (
-						<Grid
-							item
-							key={user.id}
-							xs={12}
-							md={6}
-							lg={4}
-							data-testid="user-card"
-						>
-							<Link to={`/user/${user.id}`} style={{ textDecoration: "none" }}>
-								{renderCard(user)}
-							</Link>
-						</Grid>
-					))}
-				</Grid>
-			) : (
-				<Typography data-testid="no-data">No users to display</Typography>
-			)}
-		</div>
-	);
+		);
+		return (
+			<div style={usersContainerStyles}>
+				{users.length ? (
+					<Grid container spacing={3} style={{ marginTop: 40 }}>
+						{users.map((user) => (
+							<Grid item key={user.id} xs={12} md={6} lg={4}>
+								<Link
+									to={`/user/${user.id}`}
+									data-testid="userCard"
+									style={{ textDecoration: "none" }}
+								>
+									{renderCard(user)}
+								</Link>
+							</Grid>
+						))}
+					</Grid>
+				) : (
+					"No users to display"
+				)}
+			</div>
+		);
+	} else {
+		return "No users to display";
+	}
 };
 
 export default Users;
