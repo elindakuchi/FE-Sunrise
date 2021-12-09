@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { SearchInput } from './styles';
 import SearchIcon from '@mui/icons-material/Search';
 import {SearchInputLayout} from './styles';
@@ -14,22 +14,25 @@ const SeachUser = () => {
     const location = useLocation()
     const navigate = useNavigate()
 
-    if ((location.pathname === '/') || (location.pathname.includes('?searchTerm='))) return (    
-        <div style={displayLayout}>
-            <Brightness5Icon  />
-            <SearchInputLayout >
-                <SearchInput
-                    placeholder="Search…"
-                    inputProps={{ 'aria-label': 'search' }}
-                    onChange={({target})=>navigate(`?searchTerm=${target.value}`)}
-                />
-                <SearchIcon />
-            </SearchInputLayout>   
-        </div>  
-    )
-    else return (
-        <Link to="/" style={backButtonLayout}><ArrowBackIcon /></Link>
-    )
+    if ((location.pathname === '/') || (location.pathname.includes('?searchTerm='))) {
+        return (    
+            <div style={displayLayout}>
+                <Brightness5Icon  />
+                    <SearchInputLayout >
+                        <SearchInput
+                            placeholder="Search…"
+                            inputProps={{ 'aria-label': 'search', "data-testid": 'do-search' }}
+                            onChange={({target})=>navigate(`?searchTerm=${target.value}`)}
+                        />
+                    <SearchIcon />
+                </SearchInputLayout>   
+            </div>  
+        )
+    } else {
+        return (
+            <Link to="/" style={backButtonLayout} data-testid='do-route'><ArrowBackIcon /></Link>
+        )
+    } 
 }
 
 
