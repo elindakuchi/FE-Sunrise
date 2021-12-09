@@ -1,5 +1,5 @@
 import axios from "axios";
-const url = `/seedlings`;
+const url = `https://sunrise-backend-2021.herokuapp.com/seedlings`;
 
 export const getUsers = async () => {
     try {

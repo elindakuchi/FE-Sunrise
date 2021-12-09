@@ -1,5 +1,4 @@
 import React, { createContext, useState, useEffect } from "react";
-//import { data } from "./data";
 import { getUsers } from "./apiCall";
 
 export const UserContext = createContext();
