@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# Getting Started with the Sunrise App
+
+## Backend Set-up
+
+Git Clone [repository] (https://github.com/LidoMazzucco/SUNRISE_BE.git)
+
+### Install Docker
+
+For Mac (https://docs.docker.com/desktop/mac/install/)
+For Windows (https://docs.docker.com/desktop/windows/install/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
