@@ -26,7 +26,7 @@ const SeachUser = () => {
                 <SearchInput
                     placeholder="Search…"
                     inputProps={{ 'aria-label': 'search' }}
-                    onChange={({target})=>navigate(`${searchString(target.value)}${target.value}`)
+                    onChange={({target})=>navigate(`${searchString(target.value)}${target.value}`)}
                 />
                 <SearchIcon />
             </SearchInputLayout>   
