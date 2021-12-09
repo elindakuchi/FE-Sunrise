@@ -23,7 +23,7 @@ const SeachUser = () => {
 				<Brightness5Icon />
 				<SearchInputLayout>
 					<SearchInput
-						placeholder="Search…"
+						placeholder="Search by name, title or team"
 						inputProps={{ "aria-label": "search", "data-testid": "do-search" }}
 						onChange={({ target }) =>
 							navigate(`${searchString(target.value)}${target.value}`)
