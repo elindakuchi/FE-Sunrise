@@ -1,5 +1,9 @@
 # Getting Started with the Sunrise App
 
+Welcome to Sunrise Web App, the network that aims to showcase the newly hired employees to the teams.
+
+The sunrise App is a project relying on React a powerful javascript library for building the user interface and Springboot including JDBC and Rest API call.
+
 ## Backend Set-up
 
 Git Clone [repository] (https://github.com/LidoMazzucco/SUNRISE_BE.git)
