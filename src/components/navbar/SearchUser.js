@@ -25,9 +25,7 @@ const SeachUser = () => {
                 />
                 <SearchIcon />
             </SearchInputLayout>   
-        </div>
-        
-        
+        </div>  
     )
     else return (
         <Link to="/" style={backButtonLayout}><ArrowBackIcon /></Link>
