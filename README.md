@@ -4,14 +4,22 @@
 
 Git Clone [repository] (https://github.com/LidoMazzucco/SUNRISE_BE.git)
 
-### Install Docker
+### Install Docker (For running locally)
 
 For Mac (https://docs.docker.com/desktop/mac/install/)
 For Windows (https://docs.docker.com/desktop/windows/install/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### `docker-compose up -d`
 
-## Available Scripts
+In terminal and SUNRISE_BE directory to run localhost:9099
+
+### `docker-compose down`
+
+In terminal and SUNRISE_BE directory to stop running localhost:9099
+
+## Frontend Set-up
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 In the project directory, you can run:
 
