@@ -14,6 +14,11 @@ const SeachUser = () => {
     const location = useLocation()
     const navigate = useNavigate()
 
+    const searchString = (searchItem) => {
+        if (searchItem) return (`?searchTerm=`)
+        else return(``)
+    }
+
     if ((location.pathname === '/') || (location.pathname.includes('?searchTerm='))) return (    
         <div style={displayLayout}>
             <Brightness5Icon  />
@@ -21,7 +26,7 @@ const SeachUser = () => {
                 <SearchInput
                     placeholder="Search…"
                     inputProps={{ 'aria-label': 'search' }}
-                    onChange={({target})=>navigate(`?searchTerm=${target.value}`)}
+                    onChange={({target})=>navigate(`${searchString(target.value)}${target.value}`)
                 />
                 <SearchIcon />
             </SearchInputLayout>   
