@@ -13,9 +13,9 @@ const User = () => {
 	const [users] = useContext(UserContext);
 	let { id } = useParams();
 
-	const USER = users.filter((user) => user.id === id)[0];
+	const USER = users?.filter((user) => user.id === parseInt(id, 10))[0];
 
-	return (
+	return USER ? (
 		<Paper style={paperStyles} elevation={3} data-testid="user-profile-card">
 			<Grid container spacing={3}>
 				<Grid item md={2.5} xs={12}>
@@ -93,6 +93,8 @@ const User = () => {
 				</Grid>
 			</Grid>
 		</Paper>
+	) : (
+		"No user information available"
 	);
 };
 
