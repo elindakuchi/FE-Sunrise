@@ -98,7 +98,6 @@ const Users = () => {
 				<Typography data-testid="no-data">No users to display</Typography>
 			)}
 		</div>
-	);
 
 };
 
