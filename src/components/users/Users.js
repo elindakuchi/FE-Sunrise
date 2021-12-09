@@ -6,7 +6,6 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
 import { paperStyles, usersContainerStyles } from "./styles";
-import { IMGURL } from "../../utils";
 import { Card } from "@mui/material";
 import { useLocation } from "react-router-dom";
 
@@ -30,7 +29,7 @@ const Users = () => {
 				<div style={{ display: "flex", alignItems: "center" }}>
 					<Avatar
 						alt={user.name.charAt(0)}
-						src={IMGURL}
+						src={user.image}
 						sx={{ width: 100, height: 100 }}
 					>
 						<Typography variant="h5">
