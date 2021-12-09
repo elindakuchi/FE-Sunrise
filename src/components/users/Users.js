@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { UserContext } from "../../UserProvider";
 import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
@@ -59,7 +58,11 @@ const Users = () => {
 		return (
 			<div style={usersContainerStyles}>
 				{users.length ? (
-					<Grid container spacing={3} style={{ marginTop: 40 }}>
+					<Grid
+						container
+						spacing={3}
+						style={{ marginTop: 40, color: "#808080" }}
+					>
 						{users.map((user) => (
 							<Grid item key={user.id} xs={12} md={6} lg={4}>
 								<Link
@@ -73,12 +76,18 @@ const Users = () => {
 						))}
 					</Grid>
 				) : (
-					"No users to display"
+					<Typography variant="h6" style={{ marginTop: 100, color: "#808080" }}>
+						No users to display
+					</Typography>
 				)}
 			</div>
 		);
 	} else {
-		return "No users to display";
+		return (
+			<Typography variant="h6" style={{ marginTop: 100 }}>
+				No users to display
+			</Typography>
+		);
 	}
 };
 
