@@ -5,7 +5,7 @@ import Users from ".././components/users/Users";
 import { data } from "../data";
 import { UserContext } from "../UserProvider";
 
-const { queryAllByTestId, getByTestId } = screen;
+const { queryAllByTestId, getByTestId, findAllByTestId } = screen;
 
 describe("Users", () => {
 	it("Should render with search searchTerm", () => {
@@ -31,7 +31,7 @@ describe("Users", () => {
 		expect(getByTestId("no-data")).toBeInTheDocument();
 	});
 
-	it("Should show the list of users with data", () => {
+	it("Should show the list of users with data", async() => {
 		render(
 			<MemoryRouter initialEntries={[{ pathname: '/', search: '?searchTerm=' }]}>
 				<UserContext.Provider value={[data]}>
@@ -39,7 +39,7 @@ describe("Users", () => {
 				</UserContext.Provider>
 			</MemoryRouter>
 		);
-		const userList = queryAllByTestId("user-card");
+		const userList = await findAllByTestId("user-card");
 		expect(userList).toHaveLength(6);
 	});
 });

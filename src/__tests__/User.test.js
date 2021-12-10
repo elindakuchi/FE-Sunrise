@@ -13,7 +13,7 @@ jest.mock("react-router-dom", () => ({
 
 describe("User", () => {
 	it("Should render with data", () => {
-		jest.spyOn(Router, 'useParams').mockReturnValue({ id: '1' })
+		jest.spyOn(Router, 'useParams').mockReturnValue({ id: 1 })
 		render(
 			<UserContext.Provider value={[data]}>
 				<User />
@@ -24,7 +24,7 @@ describe("User", () => {
 	});
 
 	it("should render without data", () => {
-		jest.spyOn(Router, 'useParams').mockReturnValue({ id: '1' })
+		jest.spyOn(Router, 'useParams').mockReturnValue({ id: 1 })
 		render(
 			<UserContext.Provider value={[[]]}>
 				<User />
