@@ -12,7 +12,7 @@ const User = () => {
 	const [users] = useContext(UserContext);
 	let { id } = useParams();
 
-	const USER = users?.filter((user) => user.id === parseInt(id, 10))[0];
+	const USER = users?.filter((user) => user.id.toString() === id.toString())[0];
 
 	return USER ? (
 		<Paper style={paperStyles} elevation={3} data-testid="user-profile-card">
