@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { getUsers } from '../apiCall';
+import { getUsers, apiUrl } from '../apiCall';
 import {data} from '../data'
 
 jest.mock('axios');
@@ -7,18 +7,22 @@ jest.mock('axios');
 describe('getUsers', () => {
   it('fetches successfully data from an API', async () => {
 
-    axios.get.mockImplementationOnce(() => Promise.resolve(data));
-
-    await expect(getUsers()).resolves.toEqual(data);
+    axios.get.mockImplementation((url) => {
+        if (url === apiUrl) {
+            const aaa = {data: data}
+            return Promise.resolve(aaa);
+        } 
+    });
+    await expect(await getUsers()).toEqual(data);
   });
 
   it('fetches erroneously data from an API', async () => {
-    const errorMessage = 'Network Error';
+    const errorMessage = 'Network Error aaaa';
 
     axios.get.mockImplementationOnce(() =>
-      Promise.reject(new Error(errorMessage)),
+      Promise.reject({errorMessage}),
     );
 
-    await expect(getUsers()).rejects.toThrow(errorMessage);
+    await expect(await getUsers()).toEqual({errorMessage})
   });
 });
