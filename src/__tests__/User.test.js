@@ -12,8 +12,8 @@ jest.mock("react-router-dom", () => ({
    }));
 
 describe("User", () => {
-	it("should render correctly with data", () => {
-		jest.spyOn(Router, 'useParams').mockReturnValue({ id: '1' })
+	it("Should render with data", () => {
+		jest.spyOn(Router, 'useParams').mockReturnValue({ id: 1 })
 		render(
 			<UserContext.Provider value={[data]}>
 				<User />
@@ -21,5 +21,15 @@ describe("User", () => {
 		)
 		expect(getByTestId("user-profile-card")).toBeInTheDocument()
 		expect(getByText('Soria')).toBeInTheDocument()
+	});
+
+	it("should render without data", () => {
+		jest.spyOn(Router, 'useParams').mockReturnValue({ id: 1 })
+		render(
+			<UserContext.Provider value={[[]]}>
+				<User />
+			</UserContext.Provider>
+		)
+		expect(getByTestId('no-user')).toBeInTheDocument()
 	});
 });

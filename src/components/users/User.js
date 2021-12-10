@@ -12,7 +12,7 @@ const User = () => {
 	const [users] = useContext(UserContext);
 	let { id } = useParams();
 
-	const USER = users?.filter((user) => user.id === parseInt(id, 10))[0];
+	const USER = users?.filter((user) => user.id.toString() === id.toString())[0];
 
 	return USER ? (
 		<Paper style={paperStyles} elevation={3} data-testid="user-profile-card">
@@ -21,12 +21,8 @@ const User = () => {
 					<div style={displayLayout}>
 						<Avatar
 							alt={USER.name.charAt(0)}
-							src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80"
-							sx={{
-								width: 125,
-								height: 125,
-								marginBottom: 2,
-							}}
+							src={USER.image}
+							sx={{ width: 125, height: 125, marginBottom: 2 }}
 						>
 							<Typography variant="h4">
 								{USER?.name?.charAt(0).toUpperCase()}
@@ -55,8 +51,8 @@ const User = () => {
 					<Typography align="left" gutterBottom style={{ color: "#808080" }}>
 						{USER.bio}
 					</Typography>
-					<Grid container spacing={2}>
-						<Grid item md={4} xs={12}>
+					<Grid container spacing={2} style={{ marginTop: 5 }}>
+						<Grid item md={3} xs={12}>
 							<Typography align="left" variant="h6">
 								ID
 							</Typography>
@@ -65,7 +61,7 @@ const User = () => {
 								{USER.id}
 							</Typography>
 						</Grid>
-						<Grid item md={4} xs={12}>
+						<Grid item md={3} xs={12}>
 							<Typography align="left" variant="h6">
 								Group
 							</Typography>
@@ -74,7 +70,7 @@ const User = () => {
 								{USER.group}
 							</Typography>
 						</Grid>
-						<Grid item md={4} xs={12}>
+						<Grid item md={3} xs={12}>
 							<Typography align="left" variant="h6">
 								Team
 							</Typography>
@@ -83,12 +79,23 @@ const User = () => {
 								{USER.team}
 							</Typography>
 						</Grid>
+						<Grid item md={3} xs={12}>
+							<Typography align="left" variant="h6">
+								Location
+							</Typography>
+							<Divider orientation="horizontal" />
+							<Typography align="left" style={{ color: "#808080" }}>
+								{USER.location}
+							</Typography>
+						</Grid>
 					</Grid>
 				</Grid>
 			</Grid>
 		</Paper>
 	) : (
-		"No user information available"
+		<Typography variant="h6" style={paperStyles} data-testid="no-user">
+			No user information available
+		</Typography>
 	);
 };
 

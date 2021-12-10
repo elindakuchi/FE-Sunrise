@@ -2,7 +2,6 @@
     "name": "sunrise",
     "version": "0.1.0",
     "private": true,
-    "proxy": "http://localhost:9099",
     "dependencies": {
         "@emotion/react": "^11.7.0",
         "@emotion/styled": "^11.6.0",
@@ -22,7 +21,7 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "test:coverage": "react-scripts test --coverage",
+        "test:coverage": "react-scripts test --coverage --watchAll",
         "eject": "react-scripts eject"
     },
     "eslintConfig": {

@@ -1,19 +1,37 @@
-import { render, screen } from "@testing-library/react";
-import { BrowserRouter as Router } from "react-router-dom";
-import App from "../App";
+import { render, screen } from '@testing-library/react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import App from '../App';
+import { data as users } from '../data';
+import * as apiCalls from '../apiCall';
 
-const { getByTestId, queryAllByTestId, getByText } = screen;
+describe('App', () => {
+  beforeEach(async () => {
+    const mockGetUsers = jest.spyOn(apiCalls, 'getUsers');
+    mockGetUsers.mockResolvedValueOnce(users);
 
-describe("App", () => {
-	it("Should display App", () => {
-		render(
-			<Router>
-				<App />
-			</Router>
-		);
-		expect(getByTestId("app")).toBeInTheDocument();
-		const userList = queryAllByTestId("user-card");
-		expect(userList).toHaveLength(6);
-		expect(getByText("Soria")).toBeInTheDocument();
-	});
+    render(
+      <Router>
+        <App />
+      </Router>
+    );
+  });
+
+  afterEach(() => {
+    jest.resetAllMocks();
+  });
+
+  it('Should display App', async () => {
+    const appContainer = await screen.findByTestId('app');
+    expect(appContainer).toBeInTheDocument();
+  });
+
+  it('should display list of users when there are users', async () => {
+    const userList = await screen.findAllByTestId('user-card');
+    expect(userList.length).toBe(users.length);
+  });
+
+  it('should display users name', async () => {
+    const text = await screen.findByText(users[0].name);
+    expect(text).toBeVisible();
+  });
 });
