@@ -5,7 +5,6 @@ import Avatar from "@mui/material/Avatar";
 import Divider from "@mui/material/Divider";
 import Grid from "@mui/material/Grid";
 import { useParams } from "react-router-dom";
-import { IMGURL } from "../../utils";
 import { UserContext } from "../../UserProvider";
 import { displayLayout, paperStyles, gridStyles } from "./styles";
 
@@ -22,7 +21,7 @@ const User = () => {
 					<div style={displayLayout}>
 						<Avatar
 							alt={USER.name.charAt(0)}
-							src={IMGURL}
+							src={USER.image}
 							sx={{ width: 125, height: 125, marginBottom: 2 }}
 						>
 							<Typography variant="h4">
@@ -52,7 +51,7 @@ const User = () => {
 					<Typography align="left" gutterBottom style={{ color: "#808080" }}>
 						{USER.bio}
 					</Typography>
-					<Grid container spacing={2} style={{marginTop: 5}}>
+					<Grid container spacing={2} style={{ marginTop: 5 }}>
 						<Grid item md={3} xs={12}>
 							<Typography align="left" variant="h6">
 								ID
@@ -94,7 +93,9 @@ const User = () => {
 			</Grid>
 		</Paper>
 	) : (
-		<div style={paperStyles} data-testid='no-user' >No user information available</div>
+		<Typography variant="h6" style={paperStyles} data-testid="no-user">
+			No user information available
+		</Typography>
 	);
 };
 
